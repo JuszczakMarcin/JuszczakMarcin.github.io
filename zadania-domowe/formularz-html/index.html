@@ -10,26 +10,32 @@
     <form action="https://formspree.io/juszczak-marcin@wp.pl" method="post">
         <label for="imie">Imię:</label>
         <input type="text" name="imie" id="imie"><br/>
-        
+
         <label for="nazwisko">Nazwisko:</label>
         <input type="text" name="nazwisko" id="nazwisko"><br/>
-        
+
         <label for="email">Email:</label>
         <input type="text" name="email" id="email"><br/>
-        
+
         <label for="numer">Numer telefonu:</label>
         <input type="text" name="numer" id="numer"><br/>
-        
+
         <label for="miasto">Miasto:</label>
         <select name="miasto" id="miasto">
             <option value="warszawa">Warszawa</option>
             <option value="poznan" selected>Poznań</option>
             <option value="krakow">Kraków</option>
         </select><br/>
+
+        <label for="plec">Płeć:</label>
+        <input type="radio" name="gender" value="kobieta" checked> Kobieta
+        <input type="radio" name="gender" value="mezczyzna"> Mężczyzna<br/>
         
+        <label><input type="checkbox"> Wyrażam zgodę na przetwarzanie moich danych</label><br/>
+
         <label for="wiadomosc">Wiadomość:</label>
         <textarea name="wiadomosc" id="wiadomosc"></textarea><br/>
-                
+
         <input type="submit" value="Wyślij">
 
     </form>
