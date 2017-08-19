@@ -9,16 +9,16 @@
 <body>
     <form action="https://formspree.io/juszczak-marcin@wp.pl" method="post">
         <label for="imie">Imię:</label>
-        <input type="text" name="imie" id="imie"><br/>
+        <input type="text" name="imie" id="imie" required><br/>
 
         <label for="nazwisko">Nazwisko:</label>
-        <input type="text" name="nazwisko" id="nazwisko"><br/>
+        <input type="text" name="nazwisko" id="nazwisko" required><br/>
 
         <label for="email">Email:</label>
-        <input type="text" name="email" id="email"><br/>
+        <input type="text" name="email" id="email" required><br/>
 
         <label for="numer">Numer telefonu:</label>
-        <input type="text" name="numer" id="numer"><br/>
+        <input type="text" name="numer" id="numer" required><br/>
 
         <label for="miasto">Miasto:</label>
         <select name="miasto" id="miasto">
@@ -27,12 +27,12 @@
             <option value="krakow">Kraków</option>
         </select><br/>
 
-        <label for="plec">Płeć:</label>
-        <input type="radio" name="plec" value="kobieta" checked> Kobieta
+        <label>Płeć:</label>
+        <input type="radio" name="plec" value="kobieta"> Kobieta
         <input type="radio" name="plec" value="mezczyzna"> Mężczyzna<br/>
         
         <label for="zgoda"> Wyrażam zgodę na przetwarzanie moich danych</label>
-        <input type="checkbox" name="zgoda" id="zgoda"><br/>
+        <input type="checkbox" name="zgoda" id="zgoda" required><br/>
 
         <label for="wiadomosc">Wiadomość:</label>
         <textarea name="wiadomosc" id="wiadomosc"></textarea><br/>
