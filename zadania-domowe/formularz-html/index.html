@@ -9,37 +9,48 @@
 <body>
     <form action="https://formspree.io/juszczak-marcin@wp.pl" method="post">
         <label for="imie">Imię:</label>
-        <input type="text" name="imie" id="imie" required><br/>
-
+        <input type="text" name="imie" id="imie" required>
+        <br/>
+        
         <label for="nazwisko">Nazwisko:</label>
-        <input type="text" name="nazwisko" id="nazwisko" required><br/>
-
+        <input type="text" name="nazwisko" id="nazwisko" required>
+        <br/>
+        
         <label for="email">Email:</label>
-        <input type="text" name="email" id="email" required><br/>
-
+        <input type="text" name="email" id="email" required>
+        <br/>
+        
         <label for="numer">Numer telefonu:</label>
-        <input type="text" name="numer" id="numer" required><br/>
-
+        <input type="text" name="numer" id="numer" required>
+        <br/>
+        
         <label for="miasto">Miasto:</label>
         <select name="miasto" id="miasto">
             <option value="warszawa">Warszawa</option>
             <option value="poznan" selected>Poznań</option>
             <option value="krakow">Kraków</option>
-        </select><br/>
-
+        </select>
+        <br/>
+        
         <label>Płeć:</label>
         <input type="radio" name="plec" value="kobieta"> Kobieta
-        <input type="radio" name="plec" value="mezczyzna"> Mężczyzna<br/>
+        <input type="radio" name="plec" value="mezczyzna"> Mężczyzna
+        <br/>
         
         <label for="zgoda"> Wyrażam zgodę na przetwarzanie moich danych</label>
-        <input type="checkbox" name="zgoda" id="zgoda" required><br/>
-
+        <input type="checkbox" name="zgoda" id="zgoda" required>
+        <br/>
+        
+        <form action="#"> 
+            <label for="kod">Kod pocztowy:</label>
+            <input type="text" name="kod" id="kod" pattern="[0-9]{2}\-[0-9]{3}" title="Format xx-xxx" requierd>
+            <br/> </form>
+            
         <label for="wiadomosc">Wiadomość:</label>
-        <textarea name="wiadomosc" id="wiadomosc"></textarea><br/>
-
-        <input type="submit" value="Wyślij">
-
-    </form>
+        <textarea name="wiadomosc" id="wiadomosc"></textarea>
+        <br/>
+        
+        <input type="submit" value="Wyślij"> </form>
 </body>
 
 </html>
