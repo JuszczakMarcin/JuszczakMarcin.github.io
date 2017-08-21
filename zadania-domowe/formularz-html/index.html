@@ -33,10 +33,11 @@
         <br/>
         
         <label>Płeć:</label>
-        <input type="radio" name="plec" value="kobieta"> Kobieta
-        <input type="radio" name="plec" value="mezczyzna"> Mężczyzna
+        <label for="kobieta"></label>
+        <input type="radio" name="plec" id="kobieta" value="kobieta"> Kobieta
+        <label for="mezczyzna"></label>
+        <input type="radio" name="plec" id="mezczyzna" value="mezczyzna"> Mężczyzna
         <br/>
-        
         
         <label for="kod">Kod pocztowy:</label>
         <input type="text" id="kod" name="kod" pattern="^[0-9]{2}-[0-9]{3}$" title="Format xx-xxx" required>
