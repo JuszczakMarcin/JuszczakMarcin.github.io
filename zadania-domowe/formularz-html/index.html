@@ -4,52 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <form action="https://formspree.io/juszczak-marcin@wp.pl" method="post">
-        <label for="imie">Imię:</label>
-        <input type="text" name="imie" id="imie" required>
+        <label for="imie">Imię:</label><br/>
+        <input type="text" name="imie" id="imie" class="tlo" required>
         <br/>
         
-        <label for="nazwisko">Nazwisko:</label>
-        <input type="text" name="nazwisko" id="nazwisko" required>
+        <label for="nazwisko">Nazwisko:</label><br/>
+        <input type="text" name="nazwisko" id="nazwisko" class="tlo" required>
         <br/>
         
-        <label for="email">Email:</label>
-        <input type="text" name="email" id="email" required>
+        <label for="email">E-mail:</label><br/>
+        <input type="text" name="email" id="email" required class="tlo">
         <br/>
         
-        <label for="numer">Numer telefonu:</label>
-        <input type="text" name="numer" id="numer" required>
+        <label for="numer">Numer telefonu:</label><br/>
+        <input type="text" name="numer" id="numer" class="tlo" required>
         <br/>
         
-        <label for="miasto">Miasto:</label>
-        <select name="miasto" id="miasto">
+        <label for="miasto">Wybierz miasto:</label><br/>
+        <select name="miasto" id="miasto" class="tlo">
             <option value="warszawa">Warszawa</option>
             <option value="poznan" selected>Poznań</option>
             <option value="krakow">Kraków</option>
         </select>
         <br/>
         
-        <label>Płeć:</label>
-        <label><input type="radio" name="plec" id="kobieta" value="kobieta"> Kobieta</label>
-        <label><input type="radio" name="plec" id="mezczyzna" value="mezczyzna"> Mężczyzna</label>
+        <legend>Wybierz płeć:<br/>
+        <input type="radio" name="plec" id="kobieta" value="kobieta"><label for="kobieta">Kobieta</label><br/>
+        <input type="radio" name="plec" id="mezczyzna" value="mezczyzna"> <label for="mezczyzna">Mężczyzna</label>
+        </legend>
         <br/>
         
-        <label for="kod">Kod pocztowy:</label>
-        <input type="text" id="kod" name="kod" pattern="^[0-9]{2}-[0-9]{3}$" title="Format xx-xxx" required>
+        <label for="kod">Kod pocztowy:</label><br/>
+        <input type="text" id="kod" name="kod" pattern="^[0-9]{2}-[0-9]{3}$" title="Format xx-xxx" class="tlo" required>
         <br/>
             
-        <label for="wiadomosc">Wiadomość:</label>
-        <textarea name="wiadomosc" id="wiadomosc"></textarea>
+        <label for="wiadomosc">Wiadomość:</label><br/>
+        <textarea name="wiadomosc" id="wiadomosc" class="
+        tlo"></textarea>
         <br/>
         
-        <label for="zgoda"> Wyrażam zgodę na przetwarzanie moich danych</label>
         <input type="checkbox" name="zgoda" id="zgoda" required>
-        <br/>
+        <label for="zgoda"> Wyrażam zgodę na przetwarzanie moich danych</label>
+        <br/><br/>
         
-        <input type="submit" value="Wyślij"> </form>
+        <input type="submit" value="Wyślij" class="zielony"> </form>
 </body>
 
 </html>
