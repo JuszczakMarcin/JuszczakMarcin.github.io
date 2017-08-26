@@ -32,3 +32,8 @@ input.zielony{
   border: green;
   background: green;
 }
+
+fieldset{
+    border: #213b50;
+    background: #213b50;
+}
