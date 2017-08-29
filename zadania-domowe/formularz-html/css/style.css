@@ -4,7 +4,7 @@ body{
 }
 
 *{
-  color: #ffffff
+  color: #ffffff;
 }
 
 input.tlo, select.tlo{
@@ -31,9 +31,15 @@ textarea.tlo{
 input.zielony{
   border: green;
   background: green;
+    height: 50px;
+    width: 100px;
 }
 
 fieldset{
     border: #213b50;
     background: #213b50;
+}
+
+legend{
+    text-align: left;
 }
