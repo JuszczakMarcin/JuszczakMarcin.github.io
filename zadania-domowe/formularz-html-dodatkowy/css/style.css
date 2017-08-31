@@ -1,0 +1,38 @@
+.naglowek {
+    color: darkblue;
+    margin: 0;
+}
+
+.nag {
+    color:cornflowerblue;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.tlo {
+    margin: 8px;
+    width: 250px;
+    height: 12px;
+}
+
+select.tlo {
+    position: relative;
+    width: 250px;
+    height: 20px;
+}
+
+.pod:focus {
+    border: #23f;
+    background: #ff9;
+    width: 250px;
+    height: 20px;
+}
+
+.lewy {
+    margin-left: 45px;
+}
+
+.wyslij {
+    margin-top: 5px;
+}

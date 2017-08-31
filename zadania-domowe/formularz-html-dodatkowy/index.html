@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="https://formspree.io/juszczak-marcin@wp.pl" method="post">
+
+        <header>
+            <h2 class="naglowek">A Simple Form</h2>
+            <h1 class="nag">Form Fundamentals</h1>
+        </header>
+
+
+        <fieldset>
+            <legend>Customer Info</legend>
+
+            <label for="nazwisko" class="lewy">Name:</label>
+            <input type="text" name="nazwisko" id="nazwisko" class="tlo pod" placeholder="Enter your name" autocomplete="on" required><br/>
+
+            <label for="tele" class="lewy">Telephon:</label>
+            <input type="tel" name="numer" id="tele" class="tlo" placeholder="Pattern 1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format x-xxx-xxx-xxxx" required><br/>
+
+            <label for="email" class="lewy">Email address:</label>
+            <input type="text" name="email" id="email" required class="tlo" placeholder="Enter your email address"><br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Books</legend>
+            <select name="gatunek" id="gatunek" class="tlo">
+            <option value="komedia">Komedia</option>
+            <option value="thriller">Thriller</option>
+            <option value="dramat">Dramat</option>
+            <option value="baiki">Baiki</option>
+            <option value="nowele">Nowele</option>
+        </select>
+
+            <label for="wybur">Quantity (Maximum 5)</label>
+            <input type="number" name="qua" min="1" max="5" id="wybur" required>
+        </fieldset>
+
+
+        <input type="submit" value="Submit" class="wyslij">
+    </form>
+
+
+</body>
+
+</html>
