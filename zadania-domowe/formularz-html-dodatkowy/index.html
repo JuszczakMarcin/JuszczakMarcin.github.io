@@ -31,13 +31,16 @@
 
         <fieldset>
             <legend>Books</legend>
-            <select name="gatunek" id="gatunek" class="tlo">
-            <option value="komedia">Komedia</option>
-            <option value="thriller">Thriller</option>
-            <option value="dramat">Dramat</option>
-            <option value="baiki">Baiki</option>
-            <option value="nowele">Nowele</option>
-        </select>
+            <label for="gatunek"></label>
+            <input list="gatunek" required>
+            <datalist name="gatunek" id="gatunek" class="tlo">
+            <option value="komedia">
+            <option value="thriller">
+            <option value="dramat">
+            <option value="baiki">
+            <option value="nowele">
+        </datalist>
+
 
             <label for="wybur">Quantity (Maximum 5)</label>
             <input type="number" name="qua" min="1" max="5" id="wybur" required>
