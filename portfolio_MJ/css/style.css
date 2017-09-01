@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    position: absolute;
+    top: -3%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f9fcfe;
+}
+
+div#tlo{
+    height: 90%;
+    width: 100%;
+    background-image: url('../img/header-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#menu{
+    text-align: right;
+
+}
+
+.menu-item{
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    margin-top: 25px;
+    width: 150px;
+    font-size: 15px;
+   margin-right: 15px;
+    
+}
+
+#menu .menu-item a:hover{
+    color: #686868 
+}
+
+#menu .menu-item a{
+    text-decoration: none;
+    color: white;
+}
+
+#header h1{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    color:white;
+    font-size: 120px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    top: 35%;
+    font-weight: 100;
+   
+}
+
+header h{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    color:white;
+    font-size: 50px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    top: 55%;
+    font-weight: 100;
+    
+}
+
+.zielony {
+    font-weight: 900;
+    color: #1ac056;
+}
+
+div img{
+    height: 50%;
+    width: 25%;
+    box-sizing: border-box;
+    background-image: url('../img/jan-nowak.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 18%;
+    margin-top: 10%;
+    float: none;
+    border-radius: 8px;
+    padding: 5px;
+    background: white;
+    padding:15px; 
+}
+
+.slowa {
+    font-family: 'Lato', sans-serif;
+    margin-left: 55%;
+}
+
+.mnie{
+    font-family: 'Roboto', sans-serif;
+    margin-top: -35%;
+    margin-left: 50%;
+    font-size: 45px;
+    font-weight: 100;
+}
+
