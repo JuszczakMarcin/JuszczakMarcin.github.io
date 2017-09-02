@@ -6,7 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
-
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
         <nav id="menu">
             <ul>
                 <li class="menu-item"><a href="#omnie">o mnie</a></li>
-                <li class="menu-item"><a href="#about">umiejętności</a></li>
+                <li class="menu-item"><a href="#skill">umiejętności</a></li>
                 <li class="menu-item"><a href="#about">portfolio</a></li>
                 <li class="menu-item"><a href="#contact">kontakt</a></li>
             </ul>
@@ -25,17 +25,69 @@
             <h id="frontend"> Front-End Developer</h>
         </header>
     </div>
-    
-<div>
-    <img src="img/jan-nowak.jpg" alt="portret">
-    
-    <section id="ja">
-    <h2 id="omnie" class="mnie">O <span class="zielony">mnie</span></h2>
-    <p class="slowa">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dignissimos itaque iusto veritatis vitae neque quod ab possimus reiciendis nisi reprehenderit, sunt provident qui illo, recusandae error, culpa necessitatibus iste? Eaque facere, autem accusantium explicabo suscipit sequi minima quam esse, at, obcaecati ea quae praesentium blanditiis maxime modi dolore. Dolores temporibus incidunt nulla! Quisquam commodi at, ad vitae, perferendis unde quas odio, earum molestiae tempora eum! Laborum rem excepturi ipsam voluptas illum tenetur cumque quaerat magni reprehenderit pariatur magnam, itaque quidem, rerum autem deleniti fugiat! Autem, consectetur expedita harum voluptates doloremque minima tempore dolorem hic nisi incidunt ad. Omnis, a repudiandae est nisi laudantium. Iure, aperiam, sequi. Recusandae reprehenderit, cumque. Deserunt, culpa dolores dicta porro rem laboriosam assumenda quam sit.</p>
-    
 
-  </section>
+    <div id="mmnie">
+        <img src="img/jan-nowak.jpg" alt="portret">
+        <h2 id="omnie" class="mnie">O <span class="zielony">mnie</span></h2>
+        <p class="slowa">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dignissimos itaque iusto veritatis vitae neque quod ab possimus reiciendis nisi reprehenderit, sunt provident qui illo, recusandae error, culpa necessitatibus iste? Eaque facere, autem accusantium explicabo suscipit sequi minima quam esse, at, obcaecati ea quae praesentium blanditiis maxime modi dolore. Dolores temporibus incidunt nulla! Quisquam commodi at, ad vitae, perferendis unde quas odio, earum molestiae tempora eum! Laborum rem excepturi ipsam voluptas illum tenetur cumque quaerat magni reprehenderit pariatur magnam, itaque quidem, rerum autem deleniti fugiat! Autem, consectetur expedita harum voluptates doloremque minima tempore dolorem hic nisi incidunt ad. Omnis, a repudiandae est nisi laudantium. Iure, aperiam, sequi. Recusandae reprehenderit, cumque. Deserunt, culpa dolores dicta porro rem laboriosam assumenda quam sit.</p>
+
     </div>
+
+    <ssection id="skill">
+        <h2>Moje <span class="zielony">umiejętności</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, at dolorem distinctio cumque vero ratione, minus quod debitis, dolores itaque tempora voluptates neque harum. Temporibus perspiciatis non quibusdam quis quisquam.</p>
+    </ssection>
+    <ul id="icons">
+        <il>
+            <figure> <img src="icons/html5.png" alt="html5">
+                <figcaption>HTML5</figcaption>
+            </figure>
+        </il>
+        <il>
+            <figure><img src="icons/css3.png" alt="css3">
+                <figcaption>CSS3</figcaption>
+            </figure>
+        </il>
+        <il>
+            <figure><img src="icons/js.png" alt="js">
+                <figcaption>JavaScript</figcaption>
+            </figure>
+        </il>
+        <il>
+            <figure><img src="icons/jquery.png" alt="query">
+                <figcaption>jQuery</figcaption>
+            </figure>
+        </il>
+    </ul>
+    <section id="contact">
+        <div class="contact-data">
+            <h2>Marcin <span class="zielony">Juszczak</span> </h2>
+            <address>
+            <p>ul. Widok 32<br>05-319 Cegłów</p>
+            <p>tel: 791966306<br>e-mail:<span class="zielony">juszczak-marcin@wp.pl</span></p>
+        </address>
+            <div class="contact-social-icons">
+                <a href="font-awesome-4.7.0/css/font-awesome.min.css" class="fa fa-facebook"></a>
+                <a href="font-awesome-4.7.0/css/font-awesome.min.css" class="fa fa-google"></a>
+                <a href="font-awesome-4.7.0/css/font-awesome.min.css" class="fa fa-twitter"></a>
+                <a href="font-awesome-4.7.0/css/font-awesome.min.css" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <label for="nazwisko" class="lewy"></label>
+            <input type="text" name="nazwisko" id="nazwisko" class="tlo pod" placeholder="Imię i Nazwisko" autocomplete="on" required><br/>
+
+            <label for="email" class="lewy"></label>
+            <input type="text" name="email" id="email" required class="tlo" placeholder="E-mail" required><br/>
+
+            <label for="wiadomosc"></label><br/>
+            <textarea name="wiadomosc" id="wiadomosc" class="
+        tlo" placeholder="Treść wiadomości" required></textarea><br/>
+
+            <input type="submit" value="Wyślij" class="przycisk">
+
+        </div>
+    </section>
 
 </body>
 
