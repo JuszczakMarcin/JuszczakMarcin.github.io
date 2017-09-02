@@ -300,6 +300,16 @@ footer{
 
 /*dla wszystkich powyżej 1200px*/
 @media all and (max-width:1200px){
+    .single-portfolio-item{
+        width: 50%;
+    }
+    .single-portfolio-item:last-child{
+        width: 100%;
+    }
+}
+  
+    /*dla wszystkich powyżej 768px*/
+@media all and (max-width: 768px){
     .toggle{
         display: block;
         background-color: #fff;
@@ -318,16 +328,48 @@ footer{
         display: block;
     }
     
-}
-    /*dla wszystkich powyżej 768px*/
-@media all and (max-width: 768px){
-    header h1, h{
+    header{
         padding: 10%;
     }
+    #header h1{
+        font-size: 3em;
+    }
+    header h{
+        font-size: 1.5em;
+    }
+    figure{
+        width: 100%;
+    }
+    img {
+        max-height: inherit;
+    }
+    article{
+        width: 100%;
+    }
+    .single-portfolio-item{
+        width: 100%;
+    }
+    .contact-data{
+        width: 100%;
+        text-align: center;
+    }
+    .contact-form{
+        width: 100%;
+    }
+    a{
+        margin: 0;
+    }
 }
-    
     /*dla wszystkich powyżej 680px*/
-@media all and (max-width: 680px)
+@media all and (max-width: 680px){
+    #header h1{
+        font-size: 3em;
+    }
+    header h{
+        font-size: 1.5em;
+    }
+    
+}
     
     /*dla wszstkich powyżej 480px*/
 @media all and (max-width: 480px)
