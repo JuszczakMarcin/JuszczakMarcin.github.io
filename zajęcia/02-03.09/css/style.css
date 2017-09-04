@@ -23,15 +23,16 @@
 
 /*zadanie dwa*/
 #drugie a{
-    text-decoration: none
+    text-decoration: none;
 }
 
 #drugie a:visited{
-    color: yellow;
+    color: blue;
 }
  
 #drugie a:hover{
     text-decoration: underline;
+    color: red;
 }
 
 #przeniesienie:target {
