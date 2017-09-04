@@ -52,7 +52,7 @@ div#tlo {
     font-weight: 100;
 }
 
-header h {
+header h2 {
     font-family: 'Roboto', sans-serif;
     position: absolute;
     color: white;
@@ -128,7 +128,7 @@ div img {
     font-weight: 100;
 }
 
-#icons il {
+#icons li {
     display: inline-block;
     box-sizing: border-box;
     list-style: none;
