@@ -1,0 +1,31 @@
+/*
+#first{
+    color: green;
+}
+
+.wazne{
+    background:yellow;
+}
+
+.kolor{
+    color: greenyellow;
+}*/
+
+.hideShow{
+          display:none;
+    height:200px; 
+    width:200px;
+    background-color:red;
+}
+.hideShow1{
+          display:none;
+    height:200px; 
+    width:200px;
+    background-color:red;
+}
+.hideShow2{
+          display:none;
+    height:200px; 
+    width:200px;
+    background-color:red;
+}
