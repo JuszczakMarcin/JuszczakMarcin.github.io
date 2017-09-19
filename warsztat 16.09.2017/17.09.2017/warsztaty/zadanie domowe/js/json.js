@@ -4,7 +4,7 @@ $(document).ready( function() {
     
     $( "button" ).click( function() {
         
-    $.getJSON("http://echo.jsontest.com/imie/Piotr/nazwisko/Lewinski/zawod/Programista/firma/Akademia108", function (data) {
+    $.getJSON("https://echo.jsontest.com/imie/Piotr/nazwisko/Lewinski/zawod/Programista/firma/Akademia108", function (data) {
         
     console.log(data);
     
