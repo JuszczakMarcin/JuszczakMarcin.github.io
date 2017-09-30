@@ -7,7 +7,87 @@ body {
 }
 
 /*menu*/
+#main-nav {
+    background-color: transparent;
+    border: 0;
+    transition: all 0.4s;
+}
 
+#main-nav.scrolled {
+    background-color: rgba(14, 216, 214, 0.85);
+}
+
+/* .navbar-brand to klasa przypisana do linka, jezeli chcemy zmienic kolor linkow, musimy jako target wybrac a (badz klase przypisana do a) */
+/* zeby nadac efekt animacji na dzialania uzytkownika, uzywamy wlasciwosci transition - nadajemy ja PRZED akcja uzytkownika */
+#main-nav .navbar-header .navbar-brand,
+#main-nav .navbar-collapse .navbar-nav li a {
+    color: #FFFFFF;
+    transition: all 0.4s;
+}
+
+#main-nav .navbar-header .navbar-brand:hover,
+#main-nav .navbar-collapse .navbar-nav li a:hover {
+    color: #0ED8D6;
+}
+
+#main-nav .navbar-header .navbar-brand {
+    font-size: 2em;
+    font-family: 'Droid Serif', sans-serif;
+}
+
+#main-nav .navbar-collapse .navbar-nav li a {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    transition: all 0.4s;
+}
+
+/* header */
+/* efekt maski, mozemy uzyskac stosujac trick z linear-gradient */
+#main-header {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/header/pictures_on_the_wall.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* po zmianie pozycji (wlasciwosc position) danego elementu blokowego, traci on swoje wlasciwosci rozciagniecia na 100% (flow-dokumentu). Nalezy zatem pamietac, aby elementowi ze zmieniona pozycja, nadawac szerokosc */
+#main-header .inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+#main-header .inner h1 {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    margin: 45px 0;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+#main-header .inner h2 {
+    font-family: 'Droid Serif', sans-serif;
+    color: #FFFFFF;
+    font-size: 2.5em;
+}
+
+#main-header .inner a {
+    background-color: #0ED8D6;
+    border: 1px solid #0ED8D6;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    padding: 15px 30px;
+}
+
+#main-header .inner a:hover {
+    background-color: #FFFFFF;
+    color: #0ED8D6;
+}
+/*
 #menu {
     text-align: right;
 }
@@ -29,6 +109,7 @@ body {
     text-decoration: none;
     color: white;
 }
+*/
 
 /*Tło do nagłówka, menu i ustawienie nagłówka*/
 div#tlo {
@@ -45,7 +126,6 @@ div#tlo {
     position: absolute;
     color: white;
     font-size: 120px;
-    text-align: center;
     margin: 0 auto;
     width: 100%;
     top: 35%;
@@ -57,7 +137,6 @@ header h2 {
     position: absolute;
     color: white;
     font-size: 50px;
-    text-align: center;
     margin: 0 auto;
     width: 100%;
     top: 55%;
