@@ -29,8 +29,18 @@
     #team .row > div {
         margin-bottom: 40px;
     }
+    #mmnie h2 {
+        margin-left: -85px;
+    }
+    .slowa {
+    margin: 0px -85px 0;
+        
 }
-
+    #icons {
+    margin: -35px -30px;
+    padding: initial;
+    }
+}
 @media all and (max-width: 1170px){
     #mmnie img{
         margin: 5px 0;
