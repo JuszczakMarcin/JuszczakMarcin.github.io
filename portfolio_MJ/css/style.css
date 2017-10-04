@@ -1,12 +1,55 @@
-/*Body*/
 body {
     margin: 0;
-    position: absolute;
-    top: -3%;
-    bottom: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
 }
 
-/*menu*/
+/* helpers */
+section {
+    padding: 60px 0;
+}
+
+section > p {
+    margin-bottom: 70px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    background-color: #222;
+    border: 1px solid #222;
+    border-radius: 50%;
+    font-size: 1.8em;
+    color: #fff;
+    margin: 5px;
+    border-color: #fff;
+    transition: all 0.4s;
+    margin-top: 2%;
+}
+
+.social-icons a:hover {
+    background-color: #0ed8d6;
+    border: 1px solid #0ed8d6;
+    text-decoration: none;
+}
+
+/* navbar */
 #main-nav {
     background-color: transparent;
     border: 0;
@@ -16,9 +59,6 @@ body {
 #main-nav.scrolled {
     background-color: rgba(14, 216, 214, 0.85);
 }
-
-/* .navbar-brand to klasa przypisana do linka, jezeli chcemy zmienic kolor linkow, musimy jako target wybrac a (badz klase przypisana do a) */
-/* zeby nadac efekt animacji na dzialania uzytkownika, uzywamy wlasciwosci transition - nadajemy ja PRZED akcja uzytkownika */
 #main-nav .navbar-header .navbar-brand,
 #main-nav .navbar-collapse .navbar-nav li a {
     color: #FFFFFF;
@@ -27,7 +67,7 @@ body {
 
 #main-nav .navbar-header .navbar-brand:hover,
 #main-nav .navbar-collapse .navbar-nav li a:hover {
-    color: #0ED8D6;
+    color: greenyellow;
 }
 
 #main-nav .navbar-header .navbar-brand {
@@ -41,16 +81,14 @@ body {
     transition: all 0.4s;
 }
 
-/* header */
-/* efekt maski, mozemy uzyskac stosujac trick z linear-gradient */
+
 #main-header {
     height: 100vh;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/header/pictures_on_the_wall.jpg') no-repeat;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/header-background.jpg') no-repeat;
     background-size: cover;
     position: relative;
 }
 
-/* po zmianie pozycji (wlasciwosc position) danego elementu blokowego, traci on swoje wlasciwosci rozciagniecia na 100% (flow-dokumentu). Nalezy zatem pamietac, aby elementowi ze zmieniona pozycja, nadawac szerokosc */
 #main-header .inner {
     position: absolute;
     top: 50%;
@@ -87,274 +125,110 @@ body {
     background-color: #FFFFFF;
     color: #0ED8D6;
 }
-/*
-#menu {
-    text-align: right;
+
+.zielony{
+    color: greenyellow;
 }
 
-.menu-item {
-    font-family: 'Lato', sans-serif;
-    display: inline-block;
-    margin-top: 25px;
-    width: 150px;
-    font-size: 15px;
-    margin-right: 15px;
-}
-
-#menu .menu-item a:hover {
-    color: #686868
-}
-
-#menu .menu-item a {
-    text-decoration: none;
-    color: white;
-}
-*/
-
-/*Tło do nagłówka, menu i ustawienie nagłówka*/
-div#tlo {
-    height: 90%;
-    width: 100%;
-    background-image: url('../img/header-background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#header h1 {
-    font-family: 'Roboto', sans-serif;
-    position: absolute;
-    color: white;
-    font-size: 120px;
-    margin: 0 auto;
-    width: 100%;
-    top: 35%;
-    font-weight: 100;
-}
-
-header h2 {
-    font-family: 'Roboto', sans-serif;
-    position: absolute;
-    color: white;
-    font-size: 50px;
-    margin: 0 auto;
-    width: 100%;
-    top: 55%;
-    font-weight: 100;
-}
-
-/*ustawienie koloru zielonego*/
-.zielony {
-    font-weight: 900;
-    color: #1ac056;
+.portret img{
+    width: 250px;
+    margin: 5% 53%;
+    background: white;
+        border-radius: 8px;
 }
 
 /*O mnie*/
-div img {
-    height: 50%;
-    width: 25%;
-    box-sizing: border-box;
-    background-image: url('../img/jan-nowak.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 18%;
-    margin-top: 5%;
-    float: left;
-    border-radius: 8px;
-    padding: 5px;
-    background: white;
-    padding: 15px;
-}
-
-.slowa {
-    font-family: 'Lato', sans-serif;
-    margin-left: 55%;
-}
-
-.mnie {
-    font-family: 'Roboto', sans-serif;
-    margin-top: 0%;
-    margin-left: 50%;
-    font-size: 45px;
-    font-weight: 100;
-    margin-bottom: 0;
-}
-
 #mmnie {
     background-color: #f9fcfe;
     padding: 12px 80px 100px;
     box-shadow: 0 32px 48px -48px #888888;
 }
 
-/*Moje umiejętności*/
-#skill {
-    background-color: white;
-    padding: 1px 80px 100px;
-    margin-top: 12px;
+.slowa{
+        margin: 0px 24px 0;
+}
+/*ikony w moich umiejętniściach*/
+#icons{
+   display: inline-flex;
 }
 
-#skill h2 {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 100;
+#icons figure{
+    margin: 10px;
 }
 
-#skill p {
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 100;
-}
+/*portfolio*/
 
-#icons li {
-    display: inline-block;
-    box-sizing: border-box;
-    list-style: none;
-}
-
-#icons {
-    text-align: center;
-}
-
-/*sekcja portfolio */
-#portfolio-item-1{
+#portfolio-image-1{
     background-image: url(../img/portfolio1.jpg);
 }
 
-#portfolio-item-2{
+#portfolio-image-2{
     background-image: url(../img/portfolio2.jpg);
 }
 
-#portfolio-item-3{
+#portfolio-image-3{
     background-image: url(../img/portfolio3.jpg);
 }
+#portfolio {
+    background-color: #f7f7f7;
+}
 
-.single-portfolio-item{
-    height: 350px;
-    background-repeat: no-repeat;
-    background-position: center;
+
+#portfolio .single-portfolio-item .portfolio-image {
     background-size: cover;
-    display: inline-block;
-    width: 33.3333%;
-    position: relative;
+    background-position: center;
+    height: 100%;
+    height: 300px;
 }
 
-.portfolio-items{
-    font-size: 0;
-    width: 90%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-}
-
-.single-portfolio-item-mask{
+#portfolio .single-portfolio-item .portfolio-image .portfolio-image-mask {
     background-color:rgba(42, 61, 79, 0.8);
     height: 100%;
-    width: 100%;
+    width: 92%;
     opacity: 0;
     position: absolute;
     font-size: initial;
-}
-
-.single-portfolio-item-mask:hover{
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
-}
-
-div .single-portfolio-item-mask-content{
     border: 1px solid #fff;
-    margin: 10px;
-    height: 330px;
     position: relative;
+    top: 5%;
+    left: 5%;
+    height: 92%;
+    width: 90%;
+    color: white;
 }
 
-div .single-portfolio-item-mask-content-inner{
+#portfolio .single-portfolio-item .portfolio-image:hover .portfolio-image-mask {
+    opacity: 3;
+    transition: all 1s ease-in-out;
+}
+
+#portfolio .single-portfolio-item .portfolio-image .portfolio-image-mask .fa {
+    color: #ffffff;
+    font-size: 3em;
     position: absolute;
-    transform: translateY(25%);
-    left: 0;
-    right: 0;
-    padding: 5px;
-    box-sizing: border-box;
-    color: #fff;
-    text-align: center;
-}
-
-#portfolio h2{
-     font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*kontakt*/
-#contact {
+#contact{
     background-color: #213b50;
     color: #fff;
-    width: 100%;
-    overflow: hidden;
 }
-
-.przycisk {
-    padding: 15px 30px;
-    margin-left: 78%;
-    text-transform: uppercase;
-    border: 1px #1ac056;
-    background-color: #1ac056;
+#contact h2{
+  
     color: #fff;
-    font-weight: 600;
-    
-    
 }
-
-.contact-data {
-    margin-top: 20px;
-    padding-left: 14px;
+#contakt fa{
     display: inline-block;
-    width: 48%;
-}
-
-section .contact-form {
-    margin-top: 100px;
-    width: 50%;
-    display: inline-block;
-    float: right;
-    right: auto;
-}
-
-.contact-data h2 {
-    text-align: left;
-    font-size: 38px;
-    margin-bottom: 90px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    margin-top: 5%;
     
 }
-
-.contact-data p {
-    font-style: normal;
-    line-height: 25px;
-    margin: 75px 0;
-}
-
-.fa {
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    display: inline-block;
-    width: 50%;
-}
-
-.fa-facebook,
-.fa-google,
-.fa-twitter,
-.fa-linkedin {
-    background: #213b50;
-    color: white;
-    width: 15px;
-    height: 15px;
-    border: 1px solid white;
-}
-
-input.tlo, textarea.tlo{
+input.tlo, textarea.tlo {
     width: 90%;
     background-color: #2b4a64;
     border: #2b4a64 0;
@@ -362,93 +236,17 @@ input.tlo, textarea.tlo{
     margin-bottom: 15px;
     margin-right: 10px;
 }
-
-/*Stopka*/
+.przycisk {
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border: 1px #1ac056;
+    background-color: #1ac056;
+    color: #fff;
+    font-weight: 600;
+}
+/*stopka*/
 footer{
     background-color: #142634;
     padding: 2px 80px;
-    margin: 0;
-    top: 0;
     color: white;
 }
-
-/*checkbox ukrycie*/
-.toggle, #drop{
-    display: none;
-}
-
-/*dla wszystkich powyżej 1200px*/
-@media all and (max-width:1200px){
-    .single-portfolio-item{
-        width: 50%;
-    }
-    .single-portfolio-item:last-child{
-        width: 100%;
-    }
-}
-  
-    /*dla wszystkich powyżej 768px*/
-@media all and (max-width: 768px){
-    .toggle{
-        display: block;
-        background-color: #fff;
-        padding: 0 20px;
-        color: #1ac056;
-        font-size: 20px;
-        line-height: 60px;
-        text-decoration: none;
-        border: none;
-        text-align: right;
-    }
-    ul{
-        display: none;
-    }
-    #menu #drop:checked + ul{
-        display: block;
-    }
-    
-    header{
-        padding: 10%;
-    }
-    #header h1{
-        font-size: 3em;
-    }
-    header h{
-        font-size: 1.5em;
-    }
-    figure{
-        width: 100%;
-    }
-    img {
-        max-height: inherit;
-    }
-    article{
-        width: 100%;
-    }
-    .single-portfolio-item{
-        width: 100%;
-    }
-    .contact-data{
-        width: 100%;
-        text-align: center;
-    }
-    .contact-form{
-        width: 100%;
-    }
-    a{
-        margin: 0;
-    }
-}
-    /*dla wszystkich powyżej 680px*/
-@media all and (max-width: 680px){
-    #header h1{
-        font-size: 3em;
-    }
-    header h{
-        font-size: 1.5em;
-    }
-    
-}
-    
-    /*dla wszstkich powyżej 480px*/
-@media all and (max-width: 480px)

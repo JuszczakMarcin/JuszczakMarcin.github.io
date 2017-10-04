@@ -4,21 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-      <!-- responsive -->
-    <link rel="stylesheet" href="css/responsive.css">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Montserrat:700|Roboto+Slab&amp;subset=latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-   <!--Menu-->
-    <div id="tlo">
-       <nav class="navbar navbar-default navbar-fixed-top" id="main-nav">
+    <!--Menu-->
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="main-nav">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -28,162 +37,190 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-               
+                <a class="navbar-brand" href="#"><span class="zielony">Marcin Juszczak</span></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="nav navbar-nav navbar-right">
-                   <li><a href="#omnie">o mnie</a></li>
-                <li><a href="#skill">umiejętności</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#contact">kontakt</a></li>
+                    <li><a href="#omnie">o mnie</a></li>
+                    <li><a href="#services">umiejętności</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">kontakt</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
-       
-<!--
-       
-        <nav id="menu">
-          <label class="toggle" for="drop">menu</label>
-           <input type="checkbox" id="drop">
-            <ul>
-                <li class="menu-item"><a href="#omnie">o mnie</a></li>
-                <li class="menu-item"><a href="#skill">umiejętności</a></li>
-                <li class="menu-item"><a href="#portfolio">portfolio</a></li>
-                <li class="menu-item"><a href="#contact">kontakt</a></li>
-            </ul>
-        </nav>
--->
 
-       <!--Nagłówek-->
-        <header id="header" class="text-center">
+    <header id="main-header">
+        <div class="inner">
             <h1 id="mainh">Marcin <span class="zielony">Juszczak</span></h1>
             <h2 id="frontend"> Front-End Developer</h2>
-        </header>
-    </div>
 
-   <!--O mnie-->
-    <div id="mmnie">
-        <img src="img/jan-nowak.jpg" alt="portret">
-        <h2 id="omnie" class="mnie">O <span class="zielony">mnie</span></h2>
-        <p class="slowa">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dignissimos itaque iusto veritatis vitae neque quod ab possimus reiciendis nisi reprehenderit, sunt provident qui illo, recusandae error, culpa necessitatibus iste? Eaque facere, autem accusantium explicabo suscipit sequi minima quam esse, at, obcaecati ea quae praesentium blanditiis maxime modi dolore. Dolores temporibus incidunt nulla! Quisquam commodi at, ad vitae, perferendis unde quas odio, earum molestiae tempora eum! Laborum rem excepturi ipsam voluptas illum tenetur cumque quaerat magni reprehenderit pariatur magnam, itaque quidem, rerum autem deleniti fugiat! Autem, consectetur expedita harum voluptates doloremque minima tempore dolorem hic nisi incidunt ad. Omnis, a repudiandae est nisi laudantium. Iure, aperiam, sequi. Recusandae reprehenderit, cumque. Deserunt, culpa dolores dicta porro rem laboriosam assumenda quam sit.</p>
+        </div>
+    </header>
 
-    </div>
-    
-<!--Moje umiejętności-->
-    <section id="skill">
-        <h2>Moje <span class="zielony">umiejętności</span></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, at dolorem distinctio cumque vero ratione, minus quod debitis, dolores itaque tempora voluptates neque harum. Temporibus perspiciatis non quibusdam quis quisquam.</p>
-    </section>
-    <ul id="icons">
-        <li>
-            <figure> <img src="icons/html5.png" alt="html5">
-                <figcaption>HTML5</figcaption>
-            </figure>
-        </li>
-        <li>
-            <figure><img src="icons/css3.png" alt="css3">
-                <figcaption>CSS3</figcaption>
-            </figure>
-        </li>
-        <li>
-            <figure><img src="icons/js.png" alt="js">
-                <figcaption>JavaScript</figcaption>
-            </figure>
-        </li>
-        <li>
-            <figure><img src="icons/jquery.png" alt="query">
-                <figcaption>jQuery</figcaption>
-            </figure>
-        </li>
-    </ul>
-    
-    <!--portfolio -->
-    <section id="portfolio">
-        <h2>Moje <span class="zielony">portfolio</span></h2>
-        <div class="portfolio-items">
-            <div id="portfolio-item-1" class="single-portfolio-item">
-                <div class="single-portfolio-item-mask">
-                    <div class="single-portfolio-item-mask-content">
-                        <div class="single-portfolio-item-mask-content-inner">
-                        <h3>Lorem ipsum</h3>
-                    <p>Opis projektu lorem ipsum dolor sit amet. Nunc et lorem metus. Proin in dui a diam consequat finibus. Praesent vehicula feugiat ipsum aliquam congue.</p>
-                    <h4>Wykorzystane technologie:</h4>
-                    <p>HTML5, CSS3, RWD, Bootstrap, JavaScript, JQuery</p>
-                <link rel="stylesheet" href="font-awesome-4.7.0/fonts/FontAwesome.otf">
-                        </div>
-                    </div>
+
+    <section id="mmnie" class="text-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 portret">
+                    <img src="img/jan-nowak.jpg" alt="portret">
                 </div>
-            </div>
-            <div class="single-portfolio-item" id="portfolio-item-2">
-                <div class="single-portfolio-item-mask">
-                    <div class="single-portfolio-item-mask-content">
-                        <div class="single-portfolio-item-mask-content-inner">
-                        <h3>Lorem ipsum</h3>
-                    <p>Opis projektu lorem ipsum dolor sit amet. Nunc et lorem metus. Proin in dui a diam consequat finibus. Praesent vehicula feugiat ipsum aliquam congue.</p>
-                    <h4>Wykorzystane technologie:</h4>
-                    <p>HTML5, CSS3, RWD, Bootstrap, JavaScript, JQuery</p>
-                <link rel="stylesheet" href="font-awesome-4.7.0/fonts/FontAwesome.otf">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single-portfolio-item" id="portfolio-item-3">
-              <div class="single-portfolio-item-mask">
-                    <div class="single-portfolio-item-mask-content">
-                <div class="single-portfolio-item-mask-content-inner">
-                    <h3>Lorem ipsum</h3>
-                    <p>Opis projektu lorem ipsum dolor sit amet. Nunc et lorem metus. Proin in dui a diam consequat finibus. Praesent vehicula feugiat ipsum aliquam congue.</p>
-                    <h4>Wykorzystane technologie:</h4>
-                    <p>HTML5, CSS3, RWD, Bootstrap, JavaScript, JQuery</p>
-                <link rel="stylesheet" href="font-awesome-4.7.0/fonts/FontAwesome.otf">
-                </div>
-                  </div>
+                <div class="col-sm-6">
+                    <h2 id="omnie" class="mnie">O <span class="zielony">mnie</span></h2>
+
+                    <p class="slowa">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dignissimos itaque iusto veritatis vitae neque quod ab possimus reiciendis nisi reprehenderit, sunt provident qui illo, recusandae error, culpa necessitatibus iste? Eaque facere, autem accusantium explicabo suscipit sequi minima quam esse, at, obcaecati ea quae praesentium blanditiis maxime modi dolore. Dolores temporibus incidunt nulla! Quisquam commodi at, ad vitae, perferendis unde quas odio, earum molestiae tempora eum! Laborum rem excepturi ipsam voluptas illum tenetur cumque quaerat magni reprehenderit pariatur magnam, itaque quidem, rerum autem deleniti fugiat! Autem, consectetur expedita harum voluptates doloremque minima tempore dolorem hic nisi incidunt ad. Omnis, a repudiandae est nisi laudantium. Iure, aperiam, sequi. Recusandae reprehenderit, cumque. Deserunt, culpa dolores dicta porro rem laboriosam assumenda quam sit.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!--Moje umiejętności-->
+
+    <section id="services" class="text-center">
+        <h2>Moje <span class="zielony">umiejętności</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, at dolorem distinctio cumque vero ratione, minus quod debitis, dolores itaque tempora voluptates neque harum. Temporibus perspiciatis non quibusdam quis quisquam.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul id="icons">
+                        <figure> <img src="icons/html5.png" alt="html5">
+                            <figcaption>HTML5</figcaption>
+                        </figure>
+                        <figure><img src="icons/css3.png" alt="css3">
+                            <figcaption>CSS3</figcaption>
+                        </figure>
+                        <figure><img src="icons/js.png" alt="js">
+                            <figcaption>JavaScript</figcaption>
+                        </figure>
+                        <figure><img src="icons/jquery.png" alt="query">
+                            <figcaption>jQuery</figcaption>
+                        </figure>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--portfolio -->
+    <section id="portfolio" class="text-center">
+        <h2>Moje <span class="zielony">portfolio</span></h2>
+        <div class="container">
+            <div class="row">
+                <!-- sterowanie siatka -->
+
+                <div class="col-md-4">
+                    <!-- opakowuje zdjecie i napisy, tutaj wchodzi bialy background -->
+                    <div class="single-portfolio-item">
+                        <!-- opakowuje zdjecie, overflow:hidden, zeby zablokowac wyjscie zdjecia przy transform -->
+                        <div class="portfolio-image-container">
+                            <!-- div, ktory trzyma zdjecie, ustawiona wysokosc na sztywno -->
+                            <div class="portfolio-image" id="portfolio-image-1">
+                                <!-- maska -->
+                                <div class="portfolio-image-mask">
+                                    <h3>Lorem ipsum</h3>
+                                    <p>Opis projektu lorem ipsum dolor sit amet. Nunc et lorem metus. Proin in dui a diam consequat finibus. Praesent vehicula feugiat ipsum aliquam congue.</p>
+                                    <h4>Wykorzystane technologie:</h4>
+                                    <p>HTML5, CSS3, RWD, Bootstrap, JavaScript, JQuery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- opakowuje zdjecie i napisy, tutaj wchodzi bialy background -->
+                    <div class="single-portfolio-item">
+                        <!-- opakowuje zdjecie, overflow:hidden, zeby zablokowac wyjscie zdjecia przy transform -->
+                        <div class="portfolio-image-container">
+                            <!-- div, ktory trzyma zdjecie, ustawiona wysokosc na sztywno -->
+                            <div class="portfolio-image" id="portfolio-image-2">
+                                <!-- maska -->
+                                <div class="portfolio-image-mask">
+                                    <h3>Lorem ipsum</h3>
+                                    <p>Opis projektu lorem ipsum dolor sit amet. Nunc et lorem metus. Proin in dui a diam consequat finibus. Praesent vehicula feugiat ipsum aliquam congue.</p>
+                                    <h4>Wykorzystane technologie:</h4>
+                                    <p>HTML5, CSS3, RWD, Bootstrap, JavaScript, JQuery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- opakowuje zdjecie i napisy, tutaj wchodzi bialy background -->
+                    <div class="single-portfolio-item">
+                        <!-- opakowuje zdjecie, overflow:hidden, zeby zablokowac wyjscie zdjecia przy transform -->
+                        <div class="portfolio-image-container">
+                            <!-- div, ktory trzyma zdjecie, ustawiona wysokosc na sztywno -->
+                            <div class="portfolio-image" id="portfolio-image-3">
+                                <!-- maska -->
+                                <div class="portfolio-image-mask">
+                                    <h3>Lorem ipsum</h3>
+                                    <p>Opis projektu lorem ipsum dolor sit amet. Nunc et lorem metus. Proin in dui a diam consequat finibus. Praesent vehicula feugiat ipsum aliquam congue.</p>
+                                    <h4>Wykorzystane technologie:</h4>
+                                    <p>HTML5, CSS3, RWD, Bootstrap, JavaScript, JQuery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--Dane kontowe-->
-    <section id="contact">
-        <div class="contact-data">
-            <h2>Marcin <span class="zielony">Juszczak</span> </h2>
-            <address>
+
+    <section id="contact" class="text-center">
+        <div class="container">
+            <div class="row">
+                <form action="">
+                    <div class="col-sm-6 text-left">
+                        <h2>Marcin <span class="zielony">Juszczak</span> </h2>
+                        <address>
             <p>ul. Widok 32<br>05-319 Cegłów</p>
             <p>tel: 791966306<br>e-mail:<span class="zielony">juszczak-marcin@wp.pl</span></p>
         </address>
-            <div class="contact-social-icons">
-                <a href="font-awesome-4.7.0/css/font-awesome.min.css" class="fa fa-facebook"></a>
-                <a href="font-awesome-4.7.0/css/font-awesome.min.css" class="fa fa-google"></a>
-                <a href="font-awesome-4.7.0/css/font-awesome.min.css" class="fa fa-twitter"></a>
-                <a href="font-awesome-4.7.0/css/font-awesome.min.css" class="fa fa-linkedin"></a>
-            </div>
-        </div>
-        <div class="contact-form">
-            <label for="nazwisko" class="lewy"></label>
-            <input type="text" name="nazwisko" id="nazwisko" class="tlo pod ramka" placeholder="Imię i Nazwisko" autocomplete="on" required><br/>
+                    </div>
+                    <div class="col-sm-6 text-left">
+                        <label for="nazwisko" class="lewy"></label>
+                        <input type="text" name="nazwisko" id="nazwisko" class="tlo pod ramka" placeholder="Imię i Nazwisko" autocomplete="on" required><br/>
 
-            <label for="email" class="lewy"></label>
-            <input type="text" name="email" id="email" class="tlo ramka" placeholder="E-mail" required><br/>
+                        <label for="email" class="lewy"></label>
+                        <input type="text" name="email" id="email" class="tlo ramka" placeholder="E-mail" required><br/>
 
-            <label for="wiadomosc"></label><br/>
-            <textarea name="wiadomosc" id="wiadomosc" class="
+                        <label for="wiadomosc"></label><br/>
+                        <textarea name="wiadomosc" id="wiadomosc" class="
         tlo ramka" placeholder="Treść wiadomości" required></textarea><br/>
+                        <input type="submit" value="Wyślij" class="przycisk">
+                    </div>
 
-            <input type="submit" value="Wyślij" class="przycisk">
 
+                    <div class="col-xs-12 social-icons">
+                        <a href="font-awesome-4.7.0/css/font-awesome.min.css" class="fa fa-facebook"></a>
+                        <a href="font-awesome-4.7.0/css/font-awesome.min.css" class="fa fa-google"></a>
+                        <a href="font-awesome-4.7.0/css/font-awesome.min.css" class="fa fa-twitter"></a>
+                        <a href="font-awesome-4.7.0/css/font-awesome.min.css" class="fa fa-linkedin"></a>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
     <!--Stopka-->
-    <footer>
-        <p id="autor">Copyright @ Marcin Juszczak</p>
+    <footer id="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-12">
+                    <p class="copy">&copy; M J</p>
+                </div>
+            </div>
+        </div>
     </footer>
-<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 </body>
