@@ -1,0 +1,48 @@
+@media all and (max-width: 768px) {
+    /* zmiana background-color dla nawigacji    zablokowanie zmiany koloru dla "scrolled" - klasy dodawanej po scroll */
+    #main-nav,
+    #main-nav.scrolled {
+        background-color: #fff;
+    }
+    
+    /* zmiana kolorow linkow (navbard brand -> <a class="navbar-brand"></a>) i linkow w naszym menu (#main-nav) */
+    #main-nav .navbar-header .navbar-brand,
+    #main-nav .navbar-collapse .navbar-nav li a{
+        color: #0ED8D6;
+    }
+    
+    /* zmiana koloru belek w burgerze, to sa BLOCKI z szerokoscia 22px i wysokoscia 2px, dlatego trzeba zmienic BACKGROUND-COLOR, COLOR nie bedzie dzialal */
+    #main-nav .icon-bar {
+        background-color: #0ED8D6;
+    }
+    
+    /* linki, ktore znajduja sie wewnatrz li, przylgna do prawej strony li */
+    #main-nav .navbar-collapse .navbar-nav li {
+        text-align: right;
+    }
+    
+    /* odsuniecie divow w sekcji "services", NIE LAPIEMY KLAS BOOTSTRAP! */
+    #services .row > div {
+        margin-bottom: 40px;
+    }
+    
+    #team .row > div {
+        margin-bottom: 40px;
+    }
+    #mmnie h2 {
+        margin-left: -85px;
+    }
+    .slowa {
+    margin: 0px -85px 0;
+        
+}
+    #icons {
+    margin: -35px -30px;
+    padding: initial;
+    }
+}
+@media all and (max-width: 1170px){
+    #mmnie img{
+        margin: 5px 0;
+    }
+}

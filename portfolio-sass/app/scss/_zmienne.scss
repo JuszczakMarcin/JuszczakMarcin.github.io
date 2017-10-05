@@ -1,0 +1,34 @@
+
+$text-color: #fff;
+$text-green: greenyellow;
+$text-h: black;
+$background-icon: #0ed8d6;
+$color-mnie: #f9fcfe;
+$box-color: #888888;
+$icons-background: #222;
+$port-backg: #f7f7f7;
+$color-submit: #1ac056;
+$footer-color: #142634;
+$texstera-color: #2b4a64;
+$contact-color: #213b50;
+$scrolled-color: rgba(14, 216, 214, 0.85);
+$header-color: rgba(0,0,0,0.4);
+$portfolio-mask: rgba(42, 61, 79, 0.8);
+
+
+@mixin social-icon($width, $height, $radius, $line-height){
+   width: $width;
+    height: $height;
+    display: inline-block;
+    line-height: $line-height;
+    background-color: $icons-background;
+    border: 1px solid $icons-background;
+    border-radius: $radius;
+    font-size: 1.8em;
+    color: $text-color;
+    margin: 5px;
+    border-color: $text-color;
+    transition: all 0.4s;
+    margin-top: 2%;
+   
+}
