@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.zielony {
+.main-color {
   color: greenyellow; }
 
 body {
@@ -119,12 +119,12 @@ h6 {
   border-radius: 8px; }
 
 /*O mnie*/
-#mmnie {
+#about {
   background-color: #f9fcfe;
   padding: 12px 80px 100px;
   box-shadow: 0 32px 48px -48px #888888; }
 
-.slowa {
+.word {
   margin: 0px 24px 0; }
 
 /*ikony w moich umiejętniściach*/
@@ -188,14 +188,7 @@ h6 {
 #contact h2 {
   color: #fff; }
 
-#contakt fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  margin-top: 5%; }
-
-input.tlo, textarea.tlo {
+input.view, textarea.view {
   width: 90%;
   background-color: #2b4a64;
   border: #2b4a64 0;
@@ -203,7 +196,7 @@ input.tlo, textarea.tlo {
   margin-bottom: 15px;
   margin-right: 10px; }
 
-.przycisk {
+.butto {
   padding: 15px 30px;
   text-transform: uppercase;
   border: 1px #1ac056;

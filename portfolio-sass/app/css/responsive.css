@@ -29,10 +29,10 @@
     #team .row > div {
         margin-bottom: 40px;
     }
-    #mmnie h2 {
+    #about h2 {
         margin-left: -85px;
     }
-    .slowa {
+    .word {
     margin: 0px -85px 0;
         
 }
@@ -42,7 +42,7 @@
     }
 }
 @media all and (max-width: 1170px){
-    #mmnie img{
-       margin: 5px -83px;
+    #about img{
+        margin: 5px -83px;
     }
 }
