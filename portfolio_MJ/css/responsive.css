@@ -29,11 +29,14 @@
     #team .row > div {
         margin-bottom: 40px;
     }
+    .textc {
+        text-align: center;
+    }
     #about h2 {
         margin-left: -85px;
     }
     .word {
-    margin: 0px -85px 0;
+    margin: 0px 25px 0;
         
 }
     #icons {
